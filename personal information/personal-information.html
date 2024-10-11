@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me - Pathid Prachum</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* สไตล์ปุ่มสีเขียว */
+        .button {
+            padding: 10px 20px;
+            margin: 20px 0; /* เพิ่มระยะห่างด้านบนและด้านล่าง */
+            font-size: 1em;
+            background-color: #28a745;  /* สีเขียว */
+            color: #ffffff;  /* ตัวหนังสือสีขาว */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+            border: none; /* เอาเส้นขอบออก */
+            cursor: pointer; /* เปลี่ยนเมาส์เป็นรูปมือ */
+        }
+
+        .button:hover {
+            background-color: #218838;  /* สีเขียวเข้มเมื่อเลื่อนเมาส์ */
+            transform: scale(1.05);
+        }
+
+        body {
+            background-color: #141414;  /* สีพื้นหลังดำเหมือนหน้าแรก */
+            color: #ffffff;  /* ตัวหนังสือสีขาว */
+            font-family: Arial, sans-serif;
+        }
+
+        /* สไตล์ปุ่ม Back to Home */
+        .back-button {
+            text-align: center; /* จัดปุ่มให้อยู่ตรงกลาง */
+            margin-top: 50px; /* เพิ่มระยะห่างด้านบน */
+        }
+
+        /* สไตล์อีเมลและ Facebook ใต้รูปภาพ */
+        .contact-info {
+            text-align: left;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+            display: block;
+        }
+
+        .contact-info a:hover {
+            color: #28a745; /* เปลี่ยนเป็นสีเขียวเมื่อเลื่อนเมาส์ */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- About Me Section -->
+    <section class="about-me">
+        <h1>About Me</h1>
+        <div class="about-content">
+            <div class="about-text">
+                <p>My name is Pathid Prachum and my main hobbies include electronics and basketball. I love fixing things myself, from phones to laptops, and enjoy learning about electronics.</p>
+                <p>I also like to stay active by playing basketball and practicing meditation regularly to maintain a balanced lifestyle. Currently, I’m preparing for university entrance exams, and I enjoy spending my free time gaming and hanging out with friends.</p>
+                <p>Feel free to connect with me for projects related to electronics or technology!</p>
+            </div>
+            <div class="about-image">
+                <img src="images/about-photo.jpg" alt="Pathid Prachum">
+                <p class="image-caption">"Setbacks made me stronger, and successes reinforced my purpose."</p>
+                <div class="contact-info">
+                    <a href="mailto:mr.pathid.prachum">Email: mr.pathid.prachum@gmail.com</a>
+                    <a href="https://www.facebook.com/pathidprachum" target="_blank">Facebook: Pathid Foto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Home Button (จัดให้อยู่ตรงกลางด้านล่าง) -->
+    <div class="back-button">
+        <a href="../home pages/index.html" class="button">Back to Home</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* สไตล์ปุ่มสีเขียว */
+        .button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-size: 1em;
+            background-color: #28a745;  /* สีเขียว */
+            color: #ffffff;  /* ตัวหนังสือสีขาว */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+            border: none; /* เอาเส้นขอบออก */
+            cursor: pointer; /* เปลี่ยนเมาส์เป็นรูปมือ */
+        }
+
+        .button:hover {
+            background-color: #218838;  /* สีเขียวเข้มเมื่อเลื่อนเมาส์ */
+            transform: scale(1.05);
+        }
+
+        /* จัดสไตล์ Content Row */
+        .content-row {
+            padding: 20px 50px;
+        }
+
+        .row {
+            display: flex; /* ใช้ Flexbox เพื่อจัดเรียงภาพในแนวนอน */
+            overflow-x: auto; /* ทำให้เลื่อนแนวนอได้ */
+            gap: 15px; /* ระยะห่างระหว่างภาพ */
+        }
+
+        .tile {
+            flex: 0 0 auto; /* ป้องกันการยืดของภาพ */
+        }
+
+        .tile img {
+            width: 200px; /* ความกว้างของภาพ */
+            height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .tile img:hover {
+            transform: scale(1.05); /* ขยายภาพเมื่อวางเมาส์ */
+        }
+
+        /* Background image for hero section */
+        .hero {
+            background: url('images/about-photo.jpg') no-repeat center center/cover;
+            color: #ffffff;
+            padding: 100px 50px;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>My Portfolio</h1>
+            <p>Mr. Pathid Prachum</p>
+            <div class="hero-buttons">
+                <!-- แท็ก <a> ที่ครอปปุ่ม Personal Information และสไตล์ให้เป็นปุ่มสีเขียว -->
+                <a href="../personal information/personal-information.html" class="button">Personal Information</a>
+                <a href="../research & rewards/research-body.html" class="button" style="background-color: #ffc107; color: #000;">Research & Rewards</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Rows -->
+    <section class="content-row">
+        <h2>Photo</h2>
+        <div class="row">
+            <div class="tile">
+    <div class="card">
+        <img src="images/movie1.jpg" alt="Movie 1">
+        <div class="card-body">
+            <h3>Movie 1</h3>
+            <p>Short description of the activity or project.</p>
+        </div>
+    </div>
+</div>
+            <div class="tile">
+    <div class="card">
+        <img src="images/movie2.jpg" alt="Movie 2">
+        <div class="card-body">
+            <h3>Movie 2</h3>
+            <p>Short description of the activity or project.</p>
+        </div>
+    </div>
+</div>
+            <div class="tile">
+    <div class="card">
+        <img src="images/movie3.jpg" alt="Movie 3">
+        <div class="card-body">
+            <h3>Movie 3</h3>
+            <p>Short description of the activity or project.</p>
+        </div>
+    </div>
+</div>
+            <div class="tile">
+    <div class="card">
+        <img src="images/movie4.jpg" alt="Movie 4">
+        <div class="card-body">
+            <h3>Movie 4</h3>
+            <p>Short description of the activity or project.</p>
+        </div>
+    </div>
+</div>
+            <div class="tile">
+    <div class="card">
+        <img src="images/movie5.jpg" alt="Movie 5">
+        <div class="card-body">
+            <h3>Movie 5</h3>
+            <p>Short description of the activity or project.</p>
+        </div>
+    </div>
+</div>
+            <div class="tile">
+    <div class="card">
+        <img src="images/movie6.jpg" alt="Movie 6">
+        <div class="card-body">
+            <h3>Movie 6</h3>
+            <p>Short description of the activity or project.</p>
+        </div>
+    </div>
+</div>
+            <div class="tile">
+    <div class="card">
+        <img src="images/movie7.jpg" alt="Movie 7">
+        <div class="card-body">
+            <h3>Movie 7</h3>
+            <p>Short description of the activity or project.</p>
+        </div>
+    </div>
+</div>
+            <div class="tile">
+    <div class="card">
+        <img src="images/movie8.jpg" alt="Movie 8">
+        <div class="card-body">
+            <h3>Movie 8</h3>
+            <p>Short description of the activity or project.</p>
+        </div>
+    </div>
+</div>
+            <div class="tile">
+    <div class="card">
+        <img src="images/movie9.jpg" alt="Movie 9">
+        <div class="card-body">
+            <h3>Movie 9</h3>
+            <p>Short description of the activity or project.</p>
+        </div>
+    </div>
+</div>
+            <div class="tile">
+    <div class="card">
+        <img src="images/movie10.jpg" alt="Movie 10">
+        <div class="card-body">
+            <h3>Movie 10</h3>
+            <p>Short description of the activity or project.</p>
+        </div>
+    </div>
+</div>
+            <div class="tile">
+    <div class="card">
+        <img src="images/movie11.jpg" alt="Movie 11">
+        <div class="card-body">
+            <h3>Movie 11</h3>
+            <p>Short description of the activity or project.</p>
+        </div>
+    </div>
+</div>
+            <div class="tile">
+    <div class="card">
+        <img src="images/movie12.jpg" alt="Movie 12">
+        <div class="card-body">
+            <h3>Movie 12</h3>
+            <p>Short description of the activity or project.</p>
+        </div>
+    </div>
+</div>
+            <div class="tile">
+    <div class="card">
+        <img src="images/movie13.jpg" alt="Movie 13">
+        <div class="card-body">
+            <h3>Movie 13</h3>
+            <p>Short description of the activity or project.</p>
+        </div>
+    </div>
+</div>
+            <div class="tile">
+    <div class="card">
+        <img src="images/movie14.jpg" alt="Movie 14">
+        <div class="card-body">
+            <h3>Movie 14</h3>
+            <p>Short description of the activity or project.</p>
+        </div>
+    </div>
+</div>
+            <div class="tile">
+    <div class="card">
+        <img src="images/movie15.jpg" alt="Movie 15">
+        <div class="card-body">
+            <h3>Movie 15</h3>
+            <p>Short description of the activity or project.</p>
+        </div>
+    </div>
+</div>
+            <!-- Add more tiles as needed -->
+        </div>
+    </section>
+
+    <!-- Add more content rows as desired -->
+
+</body>
+</html>

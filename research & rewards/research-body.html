@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rewards and Research - Pathid Prachum</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* สไตล์ปุ่มสีเขียว */
+        .button {
+            padding: 10px 20px;
+            margin: 20px 0;
+            font-size: 1em;
+            background-color: #28a745;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        body {
+            background-color: #141414;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        .back-button {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .reward-section, .research-section {
+            width: 50%;
+            margin-bottom: 40px;
+        }
+
+        h1, h2 {
+            color: #28a745;
+        }
+
+        .reward-list, .research-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .reward-item, .research-item {
+            background-color: #222;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .images {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .images img {
+            width: 48%;
+            border-radius: 5px;
+        }
+
+        .top-right-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        .top-right-button.hidden {
+            transform: translateX(150%);
+        }
+    </style>
+    <script>
+        window.addEventListener('scroll', function() {
+            const button = document.querySelector('.top-right-button');
+            if (window.scrollY > 200) {
+                button.classList.add('hidden');
+            } else {
+                button.classList.remove('hidden');
+            }
+        });
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Rewards Section -->
+        <section class="reward-section">
+            <h1>My Rewards</h1>
+            <ul class="reward-list">
+                <li class="reward-item">
+                    <h2>The 49th Geneva International Exhibition of Inventions </h2>
+                    <p>"Received Bronze medal in COPOLIS-SHAMPOO Innovation"</p>
+                    <div class="images">
+                        <img src="images/electronics_project_1.jpg" alt="Electronics Project Image 1">
+                        <img src="images/electronics_project_2.jpg" alt="Electronics Project Image 2">
+                    </div>
+                </li>
+                <li class="reward-item">
+                    <h2>4th PCSHS SCIENCE SYMPOSIUM 2024</h2>
+                    <p>"Received the First Place Gold Medal in the 4th PCSHS Science Symposium 2024 in the field of Physics and Astronomy, with the project titled 'Study of Parameters Affecting the Relationship between the Oscillation of Ferrite Rods and the Absorption of Electromagnetic Interference.'"</p>
+                    <div class="images">
+                        <img src="images/basketball_team_1.jpg" alt="Basketball Team Image 1">
+                        <img src="images/basketball_team_2.jpg" alt="Basketball Team Image 2">
+                    </div>
+                </li>
+                <li class="reward-item">
+                    <h2>Youth Science Competition 2024</h2>
+                    <p>"Received the Regional Gold Medal and a grant of 3,000 Baht at the Youth Science Competition 2024 on Sunday, March 3rd, in Chemistry, for the project titled 'Development of Absorption Efficiency and Properties of a Shampoo Formula Containing Propolis Extract and Coconut Oil Extract to Inhibit Trichophyton spp., the Cause of Skin Fungal Infections.'"</p>
+                    <div class="images">
+                        <img src="images/science_fair_1.jpg" alt="Science Fair Image 1">
+                        <img src="images/science_fair_2.jpg" alt="Science Fair Image 2">
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Research Section -->
+        <section class="research-section">
+            <h1>My Research</h1>
+            <ul class="research-list">
+                <li class="research-item">
+                    <h2>Renewable Energy using Electronic Circuits</h2>
+                    <p>A research project focused on creating efficient energy systems using solar cells and advanced electronic circuits.</p>
+                    <div class="images">
+                        <img src="images/renewable_energy_1.jpg" alt="Renewable Energy Image 1">
+                        <img src="images/renewable_energy_2.jpg" alt="Renewable Energy Image 2">
+                    </div>
+                </li>
+                <li class="research-item">
+                    <h2>AI in Basketball Performance Analysis</h2>
+                    <p>Explored the use of AI to analyze player performance and provide insights for training improvements.</p>
+                    <div class="images">
+                        <img src="images/ai_basketball_1.jpg" alt="AI Basketball Image 1">
+                        <img src="images/ai_basketball_2.jpg" alt="AI Basketball Image 2">
+                    </div>
+                </li>
+                <li class="research-item">
+                    <h2>Sustainable Agriculture Technology</h2>
+                    <p>Developed methods to reduce water usage in farming by using smart sensors and IoT technologies.</p>
+                    <div class="images">
+                        <img src="images/sustainable_agriculture_1.jpg" alt="Sustainable Agriculture Image 1">
+                        <img src="images/sustainable_agriculture_2.jpg" alt="Sustainable Agriculture Image 2">
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Back to Home Button (Top Right) -->
+    <div class="top-right-button">
+        <a href="../home pages/index.html" class="button">Back to Home</a>
+    </div>
+
+    <!-- Back to Home Button (Bottom) -->
+    <div class="back-button">
+        <a href="../home pages/index.html" class="button">Back to Home</a>
+    </div>
+
+</body>
+</html>
